@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+</head>
+<style>
+    html {
+        font-size: 14px;
+    }
+    .flex-container div {
+        background-color: red;
+        color: white;
+        font-size: 2rem;
+        margin: 5px;
+        height: 50px;
+        width: 100px;
+    }
+
+    .flex-container {
+        height: 80vh;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .flex-container .bigger-content {
+        font-size: 4em;
+        flex-grow: 1;
+    }
+
+    .flex-container .small-content {
+        font-size: 1em;
+    }
+</style>
+
+<body>
+    <section class="flex-container">
+        <div class="small-content">1</div>
+        <div>2</div>
+        <div class="bigger-content">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div class="bigger-content">6</div>
+    </section>
+</body>
+
+</html>
